@@ -16,7 +16,7 @@
 	\Large Adobe's Source Code Pro typeface for \LaTeX
 }
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourcecodepro v2.3.\\ \today}
+\date{Documentation for sourcecodepro v2.4.\\ \today}
 
 \begin{document}
 \maketitle
@@ -71,17 +71,17 @@ A complete list of available font features is available on page \pageref{sec:otf
 \subsection{Files}
 \begin{itemize*}
 	\item SourceCodePro-ExtraLight.otf
-%	\item SourceCodePro-ExtraLightIt.otf
+	\item SourceCodePro-ExtraLightIt.otf
 	\item SourceCodePro-Light.otf
-%	\item SourceCodePro-LightIt.otf
+	\item SourceCodePro-LightIt.otf
 	\item SourceCodePro-Regular.otf
-%	\item SourceCodePro-RegularIt.otf
+	\item SourceCodePro-RegularIt.otf
 	\item SourceCodePro-Semibold.otf
-%	\item SourceCodePro-SemiboldIt.otf
+	\item SourceCodePro-SemiboldIt.otf
 	\item SourceCodePro-Bold.otf
-%	\item SourceCodePro-BoldIt.otf
+	\item SourceCodePro-BoldIt.otf
 	\item SourceCodePro-Black.otf
-%	\item SourceCodePro-BlackIt.otf
+	\item SourceCodePro-BlackIt.otf
 \end{itemize*}
 
 \section{Type1}
@@ -93,10 +93,16 @@ The following Type1 font families are included:
 With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’.% and shapes ‘n’, ‘i’ and ‘sc’.
 
 \section{Version history}
+\subsection*{2.4}
+\begin{itemize*}
+	\item Added the italic fonts (\emph{beta} v1.002).
+	\item Added the fixed medium font (v1.020).
+\end{itemize*}
+
 \subsection*{2.3}
-\begin{itemize}
+\begin{itemize*}
 	\item Fixed errors in weight implementation.
-\end{itemize}
+\end{itemize*}
 
 \subsection*{2.2}
 \begin{itemize*}
@@ -129,6 +135,7 @@ With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’.% and shapes 
 
 \section{Known issues}
 \begin{itemize*}
+	\item Italics (which are \emph{beta}) do not always work in type1.
 	\item Using \texttt{\textbackslash liningnums} when the default numbers are oldstyle results in an ‘font feature does not exist’ error and no lining numbers due to lack of the ‘lnum’ font feature.
 \end{itemize*}
 

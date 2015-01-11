@@ -8,7 +8,7 @@
 % Licenced under the LPPL v1.3 or higher.
 %
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
-\ProvidesPackage{sourcecodepro}[2014/07/28 v2.3 Adobe's Source Code Pro typeface]
+\ProvidesPackage{sourcecodepro}[2015/01/11 v2.4 Adobe's Source Code Pro typeface]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval}
 
@@ -103,9 +103,9 @@
 	\ifsourcecodepro@ttdefault
 		\setmonofont
 			[ UprightFont    = *-\sourcecodepro@regstyle ,
-			  ItalicFont     = *-\sourcecodepro@regstyle ,
+			  ItalicFont     = *-\sourcecodepro@regstyle It ,
 			  BoldFont       = *-\sourcecodepro@boldstyle , 
-			  BoldItalicFont = *-\sourcecodepro@boldstyle ]
+			  BoldItalicFont = *-\sourcecodepro@boldstyle It ]
 			{SourceCodePro}
 	\fi
 	
@@ -113,34 +113,34 @@
 	% Regular/Bold
 	\newfontfamily\sourcecodepro
 		[ UprightFont    = *-Regular ,
-		  ItalicFont     = *-Regular ,
+		  ItalicFont     = *-RegularIt ,
 		  BoldFont       = *-Bold , 
-		  BoldItalicFont = *-Bold ]
+		  BoldItalicFont = *-BoldIt ]
 		{SourceCodePro}
 	
 	% Light/Semibold
 	\newfontfamily\sourcecodeprolight
 		[ UprightFont    = *-Light ,
-		  ItalicFont     = *-Light ,
+		  ItalicFont     = *-LightIt ,
 		  BoldFont       = *-Semibold ,
-		  BoldItalicFont = *-Semibold ]
+		  BoldItalicFont = *-SemiboldIt ]
 		{SourceCodePro}
 	
 	% ExtraLight/Black
 	\newfontfamily\sourcecodeproextreme
 		[ UprightFont    = *-ExtraLight ,
-		  ItalicFont     = *-ExtraLight ,
+		  ItalicFont     = *-ExtraLightIt ,
 		  BoldFont       = *-Black ,
-		  BoldItalicFont = *-Black ]
+		  BoldItalicFont = *-BlackIt ]
 		{SourceCodePro}
 		
 	% Lining figures
 	\newfontfamily\sourcecodeprolf
 		[ Numbers        = ,
 		  UprightFont    = *-\sourcecodepro@regstyle ,
-		  ItalicFont     = *-\sourcecodepro@regstyle ,
+		  ItalicFont     = *-\sourcecodepro@regstyle It ,
 		  BoldFont       = *-\sourcecodepro@boldstyle , 
-		  BoldItalicFont = *-\sourcecodepro@boldstyle ]
+		  BoldItalicFont = *-\sourcecodepro@boldstyle It ]
 		{SourceCodePro}
 	
 	% Dont keep all default font features
