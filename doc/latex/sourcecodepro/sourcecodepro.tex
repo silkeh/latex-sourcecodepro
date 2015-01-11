@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,english]{article}
+\documentclass[10pt,a4paper,english]{article}
 \usepackage{geometry,hologo,hyperref,babel,mdwlist,array,multicol}
 \usepackage[default,osf]{sourcesanspro}
 \usepackage[scaled=.95]{sourcecodepro}
@@ -76,6 +76,8 @@ A complete list of available font features is available on page \pageref{sec:otf
 	\item SourceCodePro-LightIt.otf
 	\item SourceCodePro-Regular.otf
 	\item SourceCodePro-RegularIt.otf
+	\item SourceCodePro-Medium.otf
+	\item SourceCodePro-MediumIt.otf	
 	\item SourceCodePro-Semibold.otf
 	\item SourceCodePro-SemiboldIt.otf
 	\item SourceCodePro-Bold.otf
@@ -90,13 +92,14 @@ The following Type1 font families are included:
 	\item SourceCodePro-TLF
 	\item SourceCodePro-TOsF
 \end{itemize*}
-With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’.% and shapes ‘n’, ‘i’ and ‘sc’.
+With series ‘el’, ‘l’, ‘m’, ‘mb’, ‘sb’, ‘b’, ‘k’ and shapes ‘n’ and ‘i’.
 
 \section{Version history}
 \subsection*{2.4}
 \begin{itemize*}
 	\item Added the italic fonts (\emph{beta} v1.002).
 	\item Added the fixed medium font (v1.020).
+	\item Implemented the medium font.
 \end{itemize*}
 
 \subsection*{2.3}
@@ -148,14 +151,14 @@ At the moment Source Code Pro doesn’t have italics or small-caps.
 \subsection{OpenType}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourcecodepro-otf-specimen}
+	\includegraphics[width=\linewidth]{sourcecodepro-otf-specimen}
 \end{figure}
 This table can also be found in \file{sourcecodepro-otf-specimen}.
 
 \subsection{Type1}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourcecodepro-type1-specimen}
+	\includegraphics[width=\linewidth]{sourcecodepro-type1-specimen}
 \end{figure}
 This table can also be found in \file{sourcecodepro-type1-specimen}.
 

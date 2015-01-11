@@ -21,6 +21,7 @@
 \newif\ifsourcecodepro@semibold
 \newif\ifsourcecodepro@light
 \newif\ifsourcecodepro@extralight
+\newif\ifsourcecodepro@medium
 
 % Scaling command
 \newcommand*{\SourceCodePro@scale}{1}
@@ -40,11 +41,12 @@
 \DeclareOptionX{oldstyle}    {\sourcecodepro@oldstyletrue}
 \DeclareOptionX{osf}         {\sourcecodepro@oldstyletrue}
 \DeclareOptionX{black}       {\sourcecodepro@blacktrue \sourcecodepro@semiboldfalse}
-\DeclareOptionX{semibold}    {\sourcecodepro@blackfalse\sourcecodepro@semiboldtrue}
+\DeclareOptionX{semibold}    {\sourcecodepro@blackfalse\sourcecodepro@semiboldtrue }
 \DeclareOptionX{bold}        {\sourcecodepro@blackfalse\sourcecodepro@semiboldfalse}
-\DeclareOptionX{light}       {\sourcecodepro@lighttrue \sourcecodepro@extralightfalse}
-\DeclareOptionX{extralight}  {\sourcecodepro@lightfalse\sourcecodepro@extralighttrue}
-\DeclareOptionX{regular}     {\sourcecodepro@lightfalse\sourcecodepro@extralightfalse}
+\DeclareOptionX{light}       {\sourcecodepro@lighttrue \sourcecodepro@extralightfalse\sourcecodepro@mediumfalse}
+\DeclareOptionX{extralight}  {\sourcecodepro@lightfalse\sourcecodepro@extralighttrue \sourcecodepro@mediumfalse}
+\DeclareOptionX{regular}     {\sourcecodepro@lightfalse\sourcecodepro@extralightfalse\sourcecodepro@mediumfalse}
+\DeclareOptionX{medium}      {\sourcecodepro@lightfalse\sourcecodepro@extralightfalse\sourcecodepro@mediumtrue }
 \DeclareOptionX{scale}       {\renewcommand*{\SourceCodePro@scale}{#1}}
 \DeclareOptionX{scaled}      {\renewcommand*{\SourceCodePro@scale}{#1}}
 \DeclareOptionX{default}     {\sourcecodepro@defaulttrue}
@@ -81,14 +83,18 @@
 		\fi
 	\fi
 	
-	% Light/ExtraLight/Regular
+	% Light/ExtraLight/Regular/Medium
 	\ifsourcecodepro@light
 		\def\sourcecodepro@regstyle{Light}
 	\else
 		\ifsourcecodepro@extralight
 			\def\sourcecodepro@regstyle{ExtraLight}
 		\else
-			\def\sourcecodepro@regstyle{Regular}
+			\ifsourcecodepro@medium
+				\def\sourcecodepro@regstyle{Medium}
+			\else
+				\def\sourcecodepro@regstyle{Regular}
+			\fi
 		\fi
 	\fi
 	
@@ -114,6 +120,14 @@
 	\newfontfamily\sourcecodepro
 		[ UprightFont    = *-Regular ,
 		  ItalicFont     = *-RegularIt ,
+		  BoldFont       = *-Bold , 
+		  BoldItalicFont = *-BoldIt ]
+		{SourceCodePro}
+	
+	% Medium/Bold
+	\newfontfamily\sourcecodepromedium
+		[ UprightFont    = *-Medium ,
+		  ItalicFont     = *-MediumIt ,
 		  BoldFont       = *-Bold , 
 		  BoldItalicFont = *-BoldIt ]
 		{SourceCodePro}
@@ -169,14 +183,18 @@
 		\fi
 	\fi
 	
-	% Light/ExtraLight/Regular
+	% Light/ExtraLight/Regular/Medium
 	\ifsourcecodepro@light
 		\def\mdseries@tt{l}
 	\else
 		\ifsourcecodepro@extralight
 			\def\mdseries@tt{el}
 		\else
-			\def\mdseries@tt{m}
+			\ifsourcecodepro@medium
+				\def\mdseries@tt{mb}
+			\else
+				\def\mdseries@tt{m}
+			\fi
 		\fi
 	\fi
 
