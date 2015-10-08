@@ -1,0 +1,67 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_l2fklzi7cnb5l3oqorzo3gb4yh
+% Encoding created by otftotfm on Thu Oct  8 17:44:03 2015
+% Command line follows encoding
+/AutoEnc_l2fklzi7cnb5l3oqorzo3gb4yh [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla /ogonek /quotesinglbase /guilsinglleft /guilsinglright
+%10
+  /quotedblleft /quotedblright /quotedblbase /guillemotleft /guillemotright /endash.sups /emdash.sups /.notdef
+  /.notdef /dotlessi /uni0237 /.notdef /.notdef /.notdef /fl /fi
+%20
+  /.notdef /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft.sups /parenright.sups /asterisk /plus /comma.sups /hyphen.sups /period.sups /slash
+%30
+  /zero.sups /one.sups /two.sups /three.sups /four.sups /five.sups /six.sups /seven.sups
+  /eight.sups /nine.sups /colon.sups /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /a.sups /b.sups /c.sups /d.sups /e.sups /f.sups /g.sups
+  /h.sups /i.sups /j.sups /k.sups /l.sups /m.sups /n.sups /o.sups
+%70
+  /p.sups /q.sups /r.sups /s.sups /t.sups /u.sups /v.sups /w.sups
+  /x.sups /y.sups /z.sups /braceleft /bar /braceright /asciitilde /hyphen.sups
+%80
+  /Abreve /Aogonek /Cacute /Ccaron /Dcaron /Ecaron /Eogonek /Gbreve
+  /Lacute /Lcaron /Lslash /Nacute /Ncaron /Eng /Ohungarumlaut /Racute
+%90
+  /Rcaron /Sacute /Scaron /uni015E /Tcaron /uni0162 /Uhungarumlaut /Uring
+  /Ydieresis /Zacute /Zcaron /Zdotaccent /IJ /Idotaccent /dcroat /section
+%A0
+  /abreve /aogonek /cacute /ccaron /dcaron /ecaron /eogonek /gbreve
+  /lacute /lcaron /lslash /nacute /ncaron /eng /ohungarumlaut /racute
+%B0
+  /rcaron /sacute /scaron /uni015F /tcaron /uni0163 /uhungarumlaut /uring
+  /ydieresis /zacute /zcaron /zdotaccent /ij /exclamdown /questiondown /sterling
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /OE
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /.notdef
+%E0
+  /agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+  /egrave.sups /eacute.sups /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+%F0
+  /eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /oe
+  /oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /germandbls
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_t1
+% --tfm-directory=fonts/tfm/adobe/sourcecodepro
+% --vf-directory=fonts/vf/adobe/sourcecodepro
+% --type1-directory=fonts/type1/adobe/sourcecodepro
+% --truetype-directory=fonts/truetype/adobe/sourcecodepro
+% --encoding-directory=fonts/enc/dvips/sourcecodepro
+% --map-file=fonts/map/dvips/sourcecodepro/SourceCodePro.map --no-updmap
+% --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=sups
+% --ligkern=f i =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i
+% =: ffi --ligkern=ff l =: ffl --ligkern=* {KL} *
+% fonts/opentype/adobe/sourcecodepro/SourceCodePro-Black.otf
+% SourceCodePro-Black-sup-t1'

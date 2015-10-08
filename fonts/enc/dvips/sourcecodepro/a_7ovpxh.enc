@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_7ovpxhsz7rxwynfxtbpsggjlga
-% Encoding created by otftotfm on Mon Jul 28 11:15:15 2014
+% Encoding created by otftotfm on Thu Oct  8 17:44:11 2015
 % Command line follows encoding
 /AutoEnc_7ovpxhsz7rxwynfxtbpsggjlga [
 %00
@@ -63,5 +63,5 @@
 % --coding-scheme=TEX TEXT --feature=numr --ligkern=f i =: fi --ligkern=f l
 % =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff l =: ffl
 % --ligkern=* {KL} *
-% fonts/opentype/adobe/sourcecodepro/SourceCodePro-Black.otf
-% SourceCodePro-Black-numr-ot1'
+% fonts/opentype/adobe/sourcecodepro/SourceCodePro-BlackIt.otf
+% SourceCodePro-BlackIt-numr-ot1'
