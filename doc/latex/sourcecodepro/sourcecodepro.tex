@@ -16,7 +16,7 @@
 	\Large Adobe's Source Code Pro typeface for \LaTeX
 }
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourcecodepro v2.5.\\ \today}
+\date{Documentation for sourcecodepro v2.6.\\ \today}
 
 \begin{document}
 \maketitle
@@ -60,7 +60,7 @@ Adobe's Source Code Pro typeface is available under the \href{http://scripts.sil
 All \LaTeX\ code is available under the \href{http://www.latex-project.org/lppl/}{\LaTeX\ project public license} v1.3 or later.
 
 \section{Specimen}
-Simple specimen can be found on page \pageref{sec:specimen}. Full specimen can be \href{http://store1.adobe.com/type/browser/pdfs/1960.pdf}{acquired from Adobe}. Please note that at the moment Source Code Pro doesn’t have italics or small-caps.
+Simple specimen can be found on page \pageref{sec:specimen}. Full specimen can be \href{http://adobe-fonts.github.io/source-code-pro/}{acquired from Adobe}. Please note that at the moment Source Code Pro doesn’t have small-caps.
 
 \section{OpenType}
 The OpenType fonts have many features, including old style numerals (\texttt{\oldstylenums{1 6 9}})
@@ -97,6 +97,11 @@ The following Type1 font families are included:
 With series ‘el’, ‘l’, ‘m’, ‘mb’, ‘sb’, ‘b’, ‘k’ and shapes ‘n’ and ‘i’.
 
 \section{Version history}
+\subsection*{2.6}
+\begin{itemize*}
+	\item Modified the \texttt{\textbackslash liningnums} to accomodate for the missing \texttt{lnum} feature.
+\end{itemize*}
+
 \subsection*{2.5}
 \begin{itemize*}
 	\item Updated the fonts to 2.010R-ro/1.030R-it.
@@ -144,10 +149,8 @@ With series ‘el’, ‘l’, ‘m’, ‘mb’, ‘sb’, ‘b’, ‘k’ and
 \end{itemize*}
 
 \section{Known issues}
-\begin{itemize*}
-	\item Italics (which are \emph{beta}) do not always work in type1.
-	\item Using \texttt{\textbackslash liningnums} when the default numbers are oldstyle results in an ‘font feature does not exist’ error and no lining numbers due to lack of the ‘lnum’ font feature.
-\end{itemize*}
+Issues can be reported \href{https://github.com/silkeh/latex-sourcecodepro/issues}{on GitHub}.
+
 
 \newpage
 \end{multicols}
@@ -173,12 +176,27 @@ This table can also be found in \file{sourcecodepro-type1-specimen}.
 \section{Opentype features}
 \label{sec:otfinfo}
 
+\newcommand*\textfeat[2]{{\sourcecodepro\addfontfeature{RawFeature=+#1}#2}}
+The following font features are avalable in the font:
+
 \begin{figure}[ht]
 	\centering
 	\begin{tabular}{>{\ttfamily}l l}
-		aalt & Access All Alternates \\
 		case & Case-Sensitive Forms \\
 		ccmp & Glyph Composition/Decomposition \\
+		cv01 & Character Variants 1 - simple a \\
+		cv02 & Character Variants 2 - simple g \\
+		cv04 & Character Variants 4 - serifed i \\
+		cv06 & Character Variants 6 - Sami \symbol{"014A} \\
+		cv07 & Character Variants 7 - cursive \symbol{"03B2} \\
+		cv08 & Character Variants 8 - cursive \symbol{"03B8} \\
+		cv09 & Character Variants 9 - cursive \symbol{"03C6} \\
+		cv10 & Character Variants 10 - Serbian \symbol{"0431} \\
+		cv11 & Character Variants 11 - Cyrillic breve [\symbol{"02D8}] \\
+		cv12 & Character Variants 12 - slashed zero [0] \\
+		cv14 & Character Variants 14 - typographic hyphen [-] \\
+		cv15 & Character Variants 15 - typographic asterisk [*] \\
+		cv16 & Character Variants 16 - slashed dollar sign [\$]\\
 		dnom & Denominators \\
 		frac & Fractions \\
 		mark & Mark Positioning \\
@@ -189,15 +207,17 @@ This table can also be found in \file{sourcecodepro-type1-specimen}.
 		salt & Stylistic Alternates \\
 		sinf & Scientific Inferiors \\
 		size & Optical Size \\
-%		ss01 & Stylistic Set 1 - alternate l \\
-		ss02 & Stylistic Set 2 - alternate a \\
-		ss03 & Stylistic Set 3 - alternate g \\
-%		ss04 & Stylistic Set 4 - alternate I \\
+		ss01 & Stylistic Set 1 - typographic alternates [-,*] \\
+		ss02 & Stylistic Set 2 - simple a, cursive \symbol{"03B2} \\
+		ss03 & Stylistic Set 3 - simple g, cursive \symbol{"03B8}, Serbian \symbol{"0431} \\
+		ss04 & Stylistic Set 4 - serifed i \\
+		ss05 & Stylistic Set 5 - Sami \symbol{"014A}, cursive \symbol{"03C6} \\
+		ss06 & Stylistic Set 6 - slashed dollar sign [\$] \\
 		subs & Subscript \\
-		sups & Superscript	
+		sups & Superscript \\
+		zero & Slashed Zero
 	\end{tabular}
 \end{figure}
-\textit{(list generated with otfinfo)}
 
 \end{document}
 
