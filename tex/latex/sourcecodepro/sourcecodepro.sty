@@ -64,9 +64,9 @@
 % Load OpenType files
 \ifsourcecodepro@otf
 	\RequirePackage{fontspec}
-    
-    % Create a fixed liningnums command:
-    \renewcommand*\liningnums[1]{{\addfontfeature{RawFeature=+lnum;-onum}#1}}
+	
+	% Create a fixed liningnums command:
+	\renewcommand*\liningnums[1]{{\addfontfeature{RawFeature=+lnum;-onum}#1}}
 	
 	% Oldstyle/Lining
 	\ifsourcecodepro@oldstyle

@@ -1,4 +1,4 @@
-Source Code Pro v2.5
+Source Code Pro v2.6
 ====================
 This package provides the Source Code Pro typeface as a LaTeX package.
 Full documentation and revision history in `sourcecodepro.pdf`.
@@ -7,19 +7,19 @@ Options
 -------
 The following options can be used:
 
-* `oldstyle, osf`: use old style numbers.
-* `lining, nf`:    use lining numbers.
-* `black`:         `\bfseries` is black.
-* `semibold`:      `\bfseries` is semibold.
-* `bold`:          `\bfseries` is bold.
-* `light`:         `\mdseries` is light.
-* `extralight`:    `\mdseries` is extra light.
-* `regular`:       `\mdseries` is regular.
-* `scale, scaled`: set scaling for the font, eg: scale=.5
-* `default`:       Source Code Pro is set as default font family.
-* `nottdefault`:   Source Code Pro is not set as monospaced family.
-* `type1, t1`:     override detection and load the Type1 font family.
-* `opentype, otf`: override detection and load the OpenType font family.
+* `oldstyle, osf`:  use old style numbers.
+* `lining, nf, lf`: use lining numbers.
+* `black`:          `\bfseries` is black.
+* `semibold`:       `\bfseries` is semibold.
+* `bold`:           `\bfseries` is bold.
+* `light`:          `\mdseries` is light.
+* `extralight`:     `\mdseries` is extra light.
+* `regular`:        `\mdseries` is regular.
+* `scale, scaled`:  set scaling for the font, eg: scale=.5
+* `default`:        Source Code Pro is set as default font family.
+* `nottdefault`:    Source Code Pro is not set as monospaced family.
+* `type1, t1`:      override detection and load the Type1 font family.
+* `opentype, otf`:  override detection and load the OpenType font family.
 
 License
 -------
