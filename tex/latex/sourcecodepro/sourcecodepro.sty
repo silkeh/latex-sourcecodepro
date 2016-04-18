@@ -206,8 +206,9 @@
 		\edef\ttdefault{SourceCodePro-T\sourcecodepro@figurestyle}
 	\fi
 	
-	% If source code pro is the default font \oldstylenums needs a new definition.
+	% If source code pro is the default font \oldstylenums needs a new definition.	
 	\ifsourcecodepro@default
+		\let\nativeoldstylenums\oldstylenums
 		\renewcommand*\oldstylenums[1]{%
 			\begingroup
 				\ifmmode
