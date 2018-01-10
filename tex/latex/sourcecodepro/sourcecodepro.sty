@@ -101,14 +101,12 @@
 		\fi
 	\fi
 	
-	% Shared features
+	% Monospace font
 	\defaultfontfeatures{
-		Ligatures = TeX ,
 		Numbers   = \sourcecodepro@figurestyle ,
 		Scale     = \SourceCodePro@scale ,
 		Extension = .otf }
 	
-	% Monospace font
 	\ifsourcecodepro@ttdefault
 		\setmonofont
 			[ UprightFont    = *-\sourcecodepro@regstyle ,
@@ -117,6 +115,13 @@
 			  BoldItalicFont = *-\sourcecodepro@boldstyle It ]
 			{SourceCodePro}
 	\fi
+	
+	% Shared features
+	\defaultfontfeatures{
+		Ligatures = TeX ,
+		Numbers   = \sourcecodepro@figurestyle ,
+		Scale     = \SourceCodePro@scale ,
+		Extension = .otf }
 	
 	% Font families
 	% Regular/Bold
