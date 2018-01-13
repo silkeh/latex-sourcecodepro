@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,english]{article}
-\usepackage{geometry,hologo,hyperref,babel,mdwlist,array,multicol}
+\usepackage{geometry,hologo,hyperref,babel,mdwlist,array,multicol,graphicx}
 \usepackage[default,osf]{sourcesanspro}
 \usepackage[scaled=.95]{sourcecodepro}
 \hypersetup{
@@ -16,7 +16,7 @@
 	\Large Adobe's Source Code Pro typeface for \LaTeX
 }
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourcecodepro v2.6.\\ \today}
+\date{Documentation for sourcecodepro v2.7.\\ \today}
 
 \begin{document}
 \maketitle
@@ -65,29 +65,10 @@ Simple specimen can be found on page \pageref{sec:specimen}. Full specimen can b
 
 \section{OpenType}
 The OpenType fonts have many features, including old style numerals (\texttt{\oldstylenums{1 6 9}})
-%, ligatures (\texttt{fi fl})
 and stylistic alternatives (\texttt{{\addfontfeature{Style=Alternate}a g}}).
 
 \subsection{Features}
 A complete list of available font features is available on page \pageref{sec:otfinfo}. More information on how to use font features can be found in the \href{http://mirror.ctan.org/macros/latex/contrib/fontspec/fontspec.pdf}{fontspec documentation}.
-
-\subsection{Files}
-\begin{itemize*}
-	\item SourceCodePro-ExtraLight.otf
-	\item SourceCodePro-ExtraLightIt.otf
-	\item SourceCodePro-Light.otf
-	\item SourceCodePro-LightIt.otf
-	\item SourceCodePro-Regular.otf
-	\item SourceCodePro-RegularIt.otf
-	\item SourceCodePro-Medium.otf
-	\item SourceCodePro-MediumIt.otf	
-	\item SourceCodePro-Semibold.otf
-	\item SourceCodePro-SemiboldIt.otf
-	\item SourceCodePro-Bold.otf
-	\item SourceCodePro-BoldIt.otf
-	\item SourceCodePro-Black.otf
-	\item SourceCodePro-BlackIt.otf
-\end{itemize*}
 
 \section{Type1}
 The following Type1 font families are included:
@@ -100,7 +81,9 @@ With series ‘el’, ‘l’, ‘m’, ‘mb’, ‘sb’, ‘b’, ‘k’ and
 \section{Version history}
 \subsection*{2.7}
 \begin{itemize*}
-	\item Make the ligatures configurable through the \texttt{ligatures} option.
+	\item Make the ligatures for the OpenType fonts configurable with the \texttt{ligatures} option.
+	\item Update the fonts to Roman v2.030 and Italic v1.050.
+	\item Generate fonts without f-ligatures.
 \end{itemize*}
 
 \subsection*{2.6}
@@ -203,6 +186,7 @@ The following font features are avalable in the font:
 		cv14 & Character Variants 14 - typographic hyphen [-] \\
 		cv15 & Character Variants 15 - typographic asterisk [*] \\
 		cv16 & Character Variants 16 - slashed dollar sign [\$]\\
+		cv17 & Character Variants 17 - alternate numeral one [1] \\
 		dnom & Denominators \\
 		frac & Fractions \\
 		mark & Mark Positioning \\
@@ -219,6 +203,7 @@ The following font features are avalable in the font:
 		ss04 & Stylistic Set 4 - serifed i \\
 		ss05 & Stylistic Set 5 - Sami \symbol{"014A}, cursive \symbol{"03C6} \\
 		ss06 & Stylistic Set 6 - slashed dollar sign [\$] \\
+		ss07 & Stylistic Set 7 - alternate numeral one [1] \\
 		subs & Subscript \\
 		sups & Superscript \\
 		zero & Slashed Zero

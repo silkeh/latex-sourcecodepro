@@ -8,7 +8,7 @@
 % Licenced under the LPPL v1.3 or higher.
 %
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
-\ProvidesPackage{sourcecodepro}[2015/10/09 v2.6 Adobe's Source Code Pro typeface]
+\ProvidesPackage{sourcecodepro}[2018/01/13 v2.7 Adobe's Source Code Pro typeface]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval}
 
@@ -66,17 +66,17 @@
 % Load OpenType files
 \ifsourcecodepro@otf
 	\RequirePackage{fontspec}
-	
+
 	% Create a fixed liningnums command:
 	\renewcommand*\liningnums[1]{{\addfontfeature{RawFeature=+lnum;-onum}#1}}
-	
+
 	% Oldstyle/Lining
 	\ifsourcecodepro@oldstyle
 		\def\sourcecodepro@figurestyle{OldStyle}
 	\else
 		\def\sourcecodepro@figurestyle{}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourcecodepro@black
 		\def\sourcecodepro@boldstyle{Black}
@@ -87,7 +87,7 @@
 			\def\sourcecodepro@boldstyle{Bold}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular/Medium
 	\ifsourcecodepro@light
 		\def\sourcecodepro@regstyle{Light}
@@ -102,41 +102,41 @@
 			\fi
 		\fi
 	\fi
-	
+
 	% Shared features
 	\defaultfontfeatures{
 		Ligatures = \sourcecodepro@ligatures ,
 		Numbers   = \sourcecodepro@figurestyle ,
 		Scale     = \SourceCodePro@scale ,
 		Extension = .otf }
-	
+
 	% Monospace font
 	\ifsourcecodepro@ttdefault
 		\setmonofont
 			[ UprightFont    = *-\sourcecodepro@regstyle ,
 			  ItalicFont     = *-\sourcecodepro@regstyle It ,
-			  BoldFont       = *-\sourcecodepro@boldstyle , 
+			  BoldFont       = *-\sourcecodepro@boldstyle ,
 			  BoldItalicFont = *-\sourcecodepro@boldstyle It ]
 			{SourceCodePro}
 	\fi
-	
+
 	% Font families
 	% Regular/Bold
 	\newfontfamily\sourcecodepro
 		[ UprightFont    = *-Regular ,
 		  ItalicFont     = *-RegularIt ,
-		  BoldFont       = *-Bold , 
+		  BoldFont       = *-Bold ,
 		  BoldItalicFont = *-BoldIt ]
 		{SourceCodePro}
-	
+
 	% Medium/Bold
 	\newfontfamily\sourcecodepromedium
 		[ UprightFont    = *-Medium ,
 		  ItalicFont     = *-MediumIt ,
-		  BoldFont       = *-Bold , 
+		  BoldFont       = *-Bold ,
 		  BoldItalicFont = *-BoldIt ]
 		{SourceCodePro}
-	
+
 	% Light/Semibold
 	\newfontfamily\sourcecodeprolight
 		[ UprightFont    = *-Light ,
@@ -144,7 +144,7 @@
 		  BoldFont       = *-Semibold ,
 		  BoldItalicFont = *-SemiboldIt ]
 		{SourceCodePro}
-	
+
 	% ExtraLight/Black
 	\newfontfamily\sourcecodeproextreme
 		[ UprightFont    = *-ExtraLight ,
@@ -152,16 +152,16 @@
 		  BoldFont       = *-Black ,
 		  BoldItalicFont = *-BlackIt ]
 		{SourceCodePro}
-		
+
 	% Lining figures
 	\newfontfamily\sourcecodeprolf
 		[ Numbers        = ,
 		  UprightFont    = *-\sourcecodepro@regstyle ,
 		  ItalicFont     = *-\sourcecodepro@regstyle It ,
-		  BoldFont       = *-\sourcecodepro@boldstyle , 
+		  BoldFont       = *-\sourcecodepro@boldstyle ,
 		  BoldItalicFont = *-\sourcecodepro@boldstyle It ]
 		{SourceCodePro}
-	
+
 	% Dont keep all default font features
 	\defaultfontfeatures{}
 
@@ -176,7 +176,7 @@
 	\else
 		\def\sourcecodepro@figurestyle{LF}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourcecodepro@black
 		\def\bfseries@tt{k}
@@ -187,7 +187,7 @@
 			\def\bfseries@tt{b}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular/Medium
 	\ifsourcecodepro@light
 		\def\mdseries@tt{l}
@@ -207,8 +207,8 @@
 	\ifsourcecodepro@ttdefault
 		\edef\ttdefault{SourceCodePro-T\sourcecodepro@figurestyle}
 	\fi
-	
-	% If source code pro is the default font \oldstylenums needs a new definition.	
+
+	% If source code pro is the default font \oldstylenums needs a new definition.
 	\ifsourcecodepro@default
 		\let\nativeoldstylenums\oldstylenums
 		\renewcommand*\oldstylenums[1]{%
