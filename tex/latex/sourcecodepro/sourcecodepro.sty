@@ -25,6 +25,7 @@
 
 % Scaling command
 \newcommand*{\SourceCodePro@scale}{1}
+\newcommand*{\sourcecodepro@ligatures}{}
 
 % Use OpenType fonts for XeTeX and LuaTeX.
 \ifxetex
@@ -56,6 +57,7 @@
 \DeclareOptionX{t1}          {\sourcecodepro@otffalse}
 \DeclareOptionX{opentype}    {\sourcecodepro@otftrue}
 \DeclareOptionX{otf}         {\sourcecodepro@otftrue}
+\DeclareOptionX{ligatures}   {\renewcommand*{\sourcecodepro@ligatures}{#1}}
 
 % Default options
 \ExecuteOptionsX{ttdefault,lining,bold,regular}
@@ -103,7 +105,7 @@
 	
 	% Shared features
 	\defaultfontfeatures{
-		Ligatures = TeX ,
+		Ligatures = \sourcecodepro@ligatures ,
 		Numbers   = \sourcecodepro@figurestyle ,
 		Scale     = \SourceCodePro@scale ,
 		Extension = .otf }

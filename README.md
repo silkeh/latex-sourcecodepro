@@ -15,7 +15,8 @@ The following options can be used:
 * `light`:          `\mdseries` is light.
 * `extralight`:     `\mdseries` is extra light.
 * `regular`:        `\mdseries` is regular.
-* `scale, scaled`:  set scaling for the font, eg: scale=.5
+* `scale, scaled`:  set scaling for the font, eg: `scale=.5`
+* `ligatures`:      change the ligatures used. eg: `ligatures=TeX`
 * `default`:        Source Code Pro is set as default font family.
 * `nottdefault`:    Source Code Pro is not set as monospaced family.
 * `type1, t1`:      override detection and load the Type1 font family.
