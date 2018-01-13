@@ -12,19 +12,19 @@ font=${fontname,,}
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
 # Convert the OpenType fonts
+# Note: this builds with f-ligatures by default
 autoinst fonts/opentype/$vend/$font/*   \
     -typewriter                         \
     -target=.                           \
     -vendor="$vend"                     \
     -typeface="$font"                   \
     -encoding=OT1,T1,LY1,TS1            \
-    -ts1                                \
     -nosmallcaps                        \
+    -noswash                            \
+    -notitling                          \
     -superiors                          \
     -inferiors                          \
     -fractions                          \
-    -noswash                            \
-    -notitling                          \
     -noornaments                        \
     -noupdmap
 
