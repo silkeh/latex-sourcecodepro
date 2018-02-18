@@ -1,0 +1,64 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_uio74xktb2tjll5x2s5g6xbpqf
+% Encoding created by otftotfm on Sun Feb 18 17:05:59 2018
+% Command line follows encoding
+/AutoEnc_uio74xktb2tjll5x2s5g6xbpqf [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla /ogonek /.notdef /.notdef /.notdef
+%10
+  /quotedblleft /quotedblright /.notdef /.notdef /.notdef /endash /emdash /.notdef
+  /.notdef /dotlessi /.notdef /.notdef /f_i /f_l /.notdef /.notdef
+%20
+  /.notdef /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.onum /one.onum /two.onum /three.onum /four.onum /five.onum /six.onum /seven.onum
+  /eight.onum /nine.onum /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /braceleft /bar /braceright /asciitilde /hyphen
+%80
+  /uni0490 /.notdef /uni0402 /uni040B /.notdef /.notdef /.notdef /uni0409
+  /uni0407 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni0405
+%90
+  /.notdef /.notdef /uni040E /.notdef /.notdef /.notdef /uni040F /.notdef
+  /.notdef /uni0404 /.notdef /uni040A /uni0401 /uni2116 /currency /section
+%A0
+  /uni0491 /.notdef /uni0452 /uni045B /.notdef /.notdef /.notdef /uni0459
+  /uni0457 /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni0455
+%B0
+  /.notdef /.notdef /uni045E /.notdef /.notdef /.notdef /uni045F /.notdef
+  /.notdef /uni0454 /uni04D9 /uni045A /uni0451 /quotedblbase /guillemotleft /guillemotright
+%C0
+  /uni0410 /uni0411 /uni0412 /uni0413 /uni0414 /uni0415 /uni0416 /uni0417
+  /uni0418 /uni0419 /uni041A /uni041B /uni041C /uni041D /uni041E /uni041F
+%D0
+  /uni0420 /uni0421 /uni0422 /uni0423 /uni0424 /uni0425 /uni0426 /uni0427
+  /uni0428 /uni0429 /uni042A /uni042B /uni042C /uni042D /uni042E /uni042F
+%E0
+  /uni0430 /uni0431 /uni0432 /uni0433 /uni0434 /uni0435 /uni0436 /uni0437
+  /uni0438 /uni0439 /uni043A /uni043B /uni043C /uni043D /uni043E /uni043F
+%F0
+  /uni0440 /uni0441 /uni0442 /uni0443 /uni0444 /uni0445 /uni0446 /uni0447
+  /uni0448 /uni0449 /uni044A /uni044B /uni044C /uni044D /uni044E /uni044F
+] def
+% Command line: 'otftotfm --automatic --encoding=t2a
+% --tfm-directory=fonts/tfm/adobe/sourcecodepro
+% --vf-directory=fonts/vf/adobe/sourcecodepro
+% --type1-directory=fonts/type1/adobe/sourcecodepro
+% --truetype-directory=fonts/truetype/adobe/sourcecodepro
+% --encoding-directory=fonts/enc/dvips/sourcecodepro
+% --map-file=fonts/map/dvips/sourcecodepro/SourceCodePro.map --no-updmap
+% --feature=onum fonts/opentype/adobe/sourcecodepro/SourceCodePro-Black.otf
+% SourceCodePro-Black-tosf-t2a'

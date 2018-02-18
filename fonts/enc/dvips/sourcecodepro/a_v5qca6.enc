@@ -1,0 +1,65 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_v5qca6dkz7wm6cmhtda2vrpdkf
+% Encoding created by otftotfm on Sun Feb 18 17:05:58 2018
+% Command line follows encoding
+/AutoEnc_v5qca6dkz7wm6cmhtda2vrpdkf [
+%00
+  /grave /acute /circumflex /tilde /dieresis /hungarumlaut /ring /caron
+  /breve /macron /dotaccent /cedilla /ogonek /.notdef /.notdef /.notdef
+%10
+  /quotedblleft /quotedblright /.notdef /.notdef /.notdef /endash /emdash /.notdef
+  /.notdef /dotlessi /.notdef /.notdef /f_i /f_l /.notdef /.notdef
+%20
+  /.notdef /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft.numr /parenright.numr /asterisk /plus /comma.numr /hyphen /period.numr /slash
+%30
+  /zero.numr /one.numr /two.numr /three.numr /four.numr /five.numr /six.numr /seven.numr
+  /eight.numr /nine.numr /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /braceleft /bar /braceright /asciitilde /hyphen
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /uni2116 /currency /section
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /quotedblbase /guillemotleft /guillemotright
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=t2a
+% --tfm-directory=fonts/tfm/adobe/sourcecodepro
+% --vf-directory=fonts/vf/adobe/sourcecodepro
+% --type1-directory=fonts/type1/adobe/sourcecodepro
+% --truetype-directory=fonts/truetype/adobe/sourcecodepro
+% --encoding-directory=fonts/enc/dvips/sourcecodepro
+% --map-file=fonts/map/dvips/sourcecodepro/SourceCodePro.map --no-updmap
+% --feature=numr --ligkern=* {KL} *
+% fonts/opentype/adobe/sourcecodepro/SourceCodePro-BlackIt.otf
+% SourceCodePro-BlackIt-numr-t2a'
