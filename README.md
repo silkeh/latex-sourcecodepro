@@ -1,7 +1,7 @@
-Source Code Pro v2.7
-====================
+Source Code Pro
+===============
+
 This package provides the Source Code Pro typeface as a LaTeX package.
-Full documentation and revision history in `sourcecodepro.pdf`.
 
 Options
 -------
