@@ -179,26 +179,26 @@
 
 	% Black/Semibold/Bold
 	\ifsourcecodepro@black
-		\def\bfseries@tt{k}
+		\def\bfseries@tt{black}
 	\else
 		\ifsourcecodepro@semibold
-			\def\bfseries@tt{sb}
+			\def\bfseries@tt{semibold}
 		\else
-			\def\bfseries@tt{b}
+			\def\bfseries@tt{bold}
 		\fi
 	\fi
 
 	% Light/ExtraLight/Regular/Medium
 	\ifsourcecodepro@light
-		\def\mdseries@tt{l}
+		\def\mdseries@tt{light}
 	\else
 		\ifsourcecodepro@extralight
-			\def\mdseries@tt{el}
+			\def\mdseries@tt{extralight}
 		\else
 			\ifsourcecodepro@medium
-				\def\mdseries@tt{mb}
+				\def\mdseries@tt{medium}
 			\else
-				\def\mdseries@tt{m}
+				\def\mdseries@tt{regular}
 			\fi
 		\fi
 	\fi
