@@ -1,0 +1,22 @@
+---
+include:
+  - project: slxh/pipelines
+    file:
+      - latex.gitlab-ci.yml
+
+variables:
+  PACKAGE: sourcecodepro
+
+build:
+  stage: build
+  script:
+    - tlmgr remove sourcecodepro --force
+    - make fonts
+    - cp -a $CI_PROJECT_DIR/* /usr/local/texlive/texmf-local
+    - echo Map SourceCodePro.map > /usr/local/texlive/texmf-local/web2c/updmap.cfg
+    - texhash
+    - updmap-sys
+    - make
+  artifacts:
+    paths:
+      - "*.zip"
