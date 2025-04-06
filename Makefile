@@ -11,7 +11,7 @@ PKG_OUT  = $(TEX_DIR)/$(PACKAGE)-type1-autoinst.sty
 
 ENCS =
 
-all: $(PACKAGE).tds.zip
+all: $(PACKAGE).tds.zip $(PACKAGE).pdf
 
 fonts: $(PKG_OUT)
 
@@ -23,6 +23,9 @@ $(PACKAGE).tds.zip: $(PACKAGE).files
 
 $(PACKAGE).zip: $(PACKAGE).tds.zip
 	create-ctan-zip $< $(PACKAGE)
+
+$(PACKAGE).pdf: docs
+	cp doc/latex/$(PACKAGE)/$(PACKAGE).pdf $(PACKAGE).pdf
 
 $(PACKAGE).files: fonts docs
 	find tex/   -type f  > $@
