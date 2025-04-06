@@ -2,6 +2,7 @@ Source Code Pro
 ===============
 
 This package provides the Source Code Pro typeface as a LaTeX package.
+Full documentation can be found in [the PDF documentation][pdf].
 
 Options
 -------
@@ -28,3 +29,5 @@ Fonts are provided under the SIL Open Font License 1.1.
 LaTeX source is licensed under the LPPL.
 
 Enjoy!
+
+[pdf]: https://gitlab.com/slxh/latex/sourcecodepro/-/jobs/artifacts/master/file/sourcecodepro.pdf?job=build
