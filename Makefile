@@ -25,7 +25,7 @@ $(PACKAGE).zip: $(PACKAGE).tds.zip
 	create-ctan-zip $< $(PACKAGE)
 
 $(PACKAGE).pdf: docs
-	cp doc/latex/$(PACKAGE)/$(PACKAGE).pdf $(PACKAGE).pdf
+	cp doc/latex/$(PACKAGE)/*.pdf ./
 
 $(PACKAGE).files: fonts docs
 	find tex/   -type f  > $@

@@ -21,3 +21,10 @@ build:
     paths:
       - "*.pdf"
       - "*.zip"
+
+test:
+  stage: test
+  needs: [build]
+  image: $CI_REGISTRY/slxh/latex/tools
+  script:
+    - pdf-diff *-specimen.pdf
